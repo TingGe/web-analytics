@@ -1,4 +1,4 @@
-# 分析学习Google Analytics客户端的javascript代码 #
+# 分析学习GA的javascript代码 #
 
 在2011年4月份，根据项目的需要，把GA的js代码整个翻译了一遍，甚至当前项目需要的个别分支都是能直接跑得起来的。
 
