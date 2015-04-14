@@ -3,7 +3,9 @@
  * 电子邮件：505253293@163.com
  * 个人主页：https://github.com/TingGe
  * 代码地址：https://www.google-analytics.com/analytics.js
- * 文档地址：https://developers.google.com/analytics/devguides/collection/analyticsjs/
+ * 文档地址：
+ * https://developers.google.com/analytics/devguides/collection/analyticsjs/
+ * https://developers.google.com/analytics/devguides/collection/analyticsjs/?hl=zh-cn
  * @fileoverview Google Analytics（分析）客户端javascript代码。
  */
 
