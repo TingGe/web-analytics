@@ -1,9 +1,10 @@
-# 学习Google Analytics的javascript代码 #
+# Web-Analytics
+网站监测与分析
 
-在2011年4月份，根据项目的需要，把GA的js代码整个翻译了一遍，甚至当前项目需要的个别分支都是能直接跑得起来的。
+## 其它参考
 
-当然，GA的前端javascript代码也更新过很多版本，这一版的翻译已经不能体现GA的最新状态了。
+1. Real Time Web Analytics:[clicky](http://clicky.com/)
 
-时过境迁，多年前分析代码的手法也还不够娴熟和细腻，但总是一段心血。
-
-这样的代码放到正式项目里不合适，扔掉又相当可惜，而且网上也没有发现有类似的分析工作，还是放到github共享一下是正道。
+2. Liberating Web Analytics:[piwik](http://piwik.org/)
+   
+### 
