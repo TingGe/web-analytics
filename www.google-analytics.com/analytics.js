@@ -92,11 +92,11 @@
         return "function" == typeof a
     }, ka = function (a) {
         return "[object Array]" == Object[z].toString[C](Object(a))
-    }, qa = function (a) {
+    }, isString = function (a) {
         return void 0 != a && -1 < (a.constructor + "")[t]("String")
     }, D = function (a, b) {
         return 0 == a[t](b)
-    }, sa = function (a) {
+    }, trim = function (a) {
         return a ? a[_replace](/^[\s\xa0]+|[\s\xa0]+$/g, "") : ""
     }, ta = function (a) {
         var b = M[u]("img");
@@ -417,7 +417,7 @@
     }, db = function () {
     };
 
-    var gb = qa(win.GoogleAnalyticsObject) && sa(win.GoogleAnalyticsObject) || "ga",
+    var GANameSpace = isString(win.GoogleAnalyticsObject) && trim(win.GoogleAnalyticsObject) || "ga",
       Ba = !1,
       he = S("_br"),
       hb = T("apiVersion", "v"),
@@ -933,7 +933,7 @@
         this.b = new Ya;
         this.filters = new Ha;
         b(V, a[V]);
-        b(Na, sa(a[Na]));
+        b(Na, trim(a[Na]));
         b(U, a[U]);
         b(W, a[W] || xa());
         b(Yb, a[Yb]);
@@ -1071,13 +1071,13 @@
     var td = /^(?:(\w+)\.)?(?:(\w+):)?(\w+)$/, sc = function (a) {
         if (ea(a[0]))this.u = a[0]; else {
             var b = td.exec(a[0]);
-            null != b && 4 == b[y] && (this.c = b[1] || "t0", this.e = b[2] || "", this.d = b[3], this.a = [][ha][C](a, 1), this.e || (this.A = "create" == this.d, this.i = "require" == this.d, this.g = "provide" == this.d, this.ba = "remove" == this.d), this.i && (3 <= this.a[y] ? (this.X = this.a[1], this.W = this.a[2]) : this.a[1] && (qa(this.a[1]) ? this.X = this.a[1] : this.W = this.a[1])));
+            null != b && 4 == b[y] && (this.c = b[1] || "t0", this.e = b[2] || "", this.d = b[3], this.a = [][ha][C](a, 1), this.e || (this.A = "create" == this.d, this.i = "require" == this.d, this.g = "provide" == this.d, this.ba = "remove" == this.d), this.i && (3 <= this.a[y] ? (this.X = this.a[1], this.W = this.a[2]) : this.a[1] && (isString(this.a[1]) ? this.X = this.a[1] : this.W = this.a[1])));
             b = a[1];
             a = a[2];
             if (!this.d)throw"abort";
-            if (this.i && (!qa(b) || "" == b))throw"abort";
+            if (this.i && (!isString(b) || "" == b))throw"abort";
             if (this.g &&
-              (!qa(b) || "" == b || !ea(a)))throw"abort";
+              (!isString(b) || "" == b || !ea(a)))throw"abort";
             if (ud(this.c) || ud(this.e))throw"abort";
             if (this.g && "t0" != this.c)throw"abort";
         }
@@ -1162,7 +1162,7 @@
     Z.v = function (a) {
         try {
             if (a.u)a.u[C](O, N.j("t0")); else {
-                var b = a.c == gb ? N : N.j(a.c);
+                var b = a.c == GANameSpace ? N : N.j(a.c);
                 if (a.A)"t0" == a.c && N.create[G](N, a.a); else if (a.ba)N.remove(a.c); else if (b)if (a.i) {
                     if (!tc(a.a[0], b, a.W))return !0
                 } else if (a.e) {
@@ -1206,15 +1206,16 @@
         return N.P[ha](0)
     };
     N.N = function () {
-        "ga" != gb && J(49);
-        var a = O[gb];
+        "ga" != GANameSpace && J(49);
+        var a = O[GANameSpace];
         if (!a || 42 != a.answer) {
             N.L = a && a.l;
             N.loaded = !0;
-            var b = O[gb] = N;
+            var b = O[GANameSpace] = N;
             X("create", b, b.create);
             X("remove", b, b.remove);
-            X("getByName", b, b.j, 5);
+            X("getByName", b,
+              b.j, 5);
             X("getAll", b, b.getAll, 6);
             b = pc[z];
             X("get", b, b.get, 7);
