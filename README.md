@@ -1,15 +1,15 @@
 # Web-Analytics
-网站监测与分析
+网站监测与分析、用户追踪
 
 ## Google Analytics ##
 
-### Google Analytics分析 ###
+### 分析 ###
 
 1. [Google Analytics之工作原理和应用技巧](http://www.drupal001.com/2012/04/google-analytics-mechanism/)
 2. [谈谈Google Analytics](http://yansong.me/2013/09/17/talk-about-Google-Analytics.html)
 3. [蓝鲸的网站分析笔记](http://bluewhale.cc/?s=Google)
 
-## Google Analytics 竞品
+## 竞品
 
 1. [exelate](http://exelate.com/) 尼尔森公司，提供一套专有的客户洞察和闭环测量工具。 让品牌了解客户参与实时跟踪和数字营销影响到线下的销售
 2. [clicky](http://clicky.com/)  一款功能全面的分析套装软件，主要针对于小网站和博客，易于使用，包括实时访客追踪、深度内容分析等高级服务
@@ -20,9 +20,7 @@
    
 
 
-## 用户追踪，用户互动行为记录
-
-### 参考 ###
+## 实现技术
 
 - [samyk/evercookie](https://github.com/samyk/evercookie)
 
