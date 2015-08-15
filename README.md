@@ -20,7 +20,7 @@
    
 
 
-## 实现技术
+## 技术
 
 - [samyk/evercookie](https://github.com/samyk/evercookie)
 
