@@ -18,7 +18,7 @@
 5. [New Relic](https://newrelic.com/) 性能监测＋网站监测＋app监测
 6. [OneAPM](https://www.oneapm.com/) 性能监测＋网站监测＋app监测
 7. [Kissmetrics](https://www.kissmetrics.com/)
-   
+
 
 
 ## 技术
@@ -32,3 +32,5 @@
 - [不用Cookie的“Cookie”技术](http://blog.jobbole.com/46266/)
 
 - [取代cookie的网站追踪技术：”帆布指纹识别”初探](http://netsecurity.51cto.com/art/201407/446816.htm)
+
+- [Web性能API——帮你分析Web前端性能](http://www.infoq.com/cn/news/2015/06/web-performance-api)
