@@ -1,26 +1,35 @@
 # Web-Analytics
-网站监测与分析、用户追踪、网络广告认证
+监测分析工具（Measurement & Analytics）、广告验证（Verification）、访客唯一标识
 
-## 网站监测与分析
-### Google Analytics
+## 监测分析工具 Measurement & Analytics
 
-分析见 google-analytics
+- [Google Analytics之工作原理和应用技巧](http://www.drupal001.com/2012/04/google-analytics-mechanism/)源码分析见 google-analytics
 
-1. [Google Analytics之工作原理和应用技巧](http://www.drupal001.com/2012/04/google-analytics-mechanism/)
-2. [谈谈Google Analytics](http://yansong.me/2013/09/17/talk-about-Google-Analytics.html)
-3. [蓝鲸的网站分析笔记](http://bluewhale.cc/?s=Google)
+- [谈谈Google Analytics](http://yansong.me/2013/09/17/talk-about-Google-Analytics.html)
 
-### 其他
+- [蓝鲸的网站分析笔记](http://bluewhale.cc/?s=Google)
 
-1. [exelate](http://exelate.com/) 尼尔森公司，提供一套专有的客户洞察和闭环测量工具。 让品牌了解客户参与实时跟踪和数字营销影响到线下的销售
-2. [clicky](http://clicky.com/)  一款功能全面的分析套装软件，主要针对于小网站和博客，易于使用，包括实时访客追踪、深度内容分析等高级服务
-3. [piwik](http://piwik.org/)  一个PHP和MySQL的开放源代码的Web统计软件
-4. [Ptengine](https://www.ptengine.com/)  能够出页面复杂互动元素的热图报告、可实时分析网站数据和用户行为
-5. [New Relic](https://newrelic.com/) 性能监测＋网站监测＋app监测
-6. [OneAPM](https://www.oneapm.com/) 性能监测＋网站监测＋app监测
-7. [Kissmetrics](https://www.kissmetrics.com/)
+- [exelate](http://exelate.com/) 尼尔森，让品牌了解客户参与实时跟踪和数字营销影响到线下的销售
 
-## 技术
+- [clicky](http://clicky.com/)  针对小网站和博客，包括实时访客追踪、深度内容分析等高级服务
+
+- [Ptengine](https://www.ptengine.com/)  能够出页面复杂互动元素的热图报告、可实时分析网站数据和用户行为
+
+## 广告验证 Verification
+
+- Integral Ad Science
+- [DoubleVerify](http://doubleverify.com/)
+- [Moat](http://www.moat.com)
+- [Adbug Tech](http://www.adbugtech.com/): 分析见 hegek7
+- [RTB Asia](http://rtbasia.com)
+- [ForensiQ](http://forensiq.com)
+- [Sizmek](http://www.sizmek.com)
+
+### 参考资料
+- http://webadvertising20.com/2011/11/06/really-understanding-iframes/
+- [Web性能API——帮你分析Web前端性能](http://www.infoq.com/cn/news/2015/06/web-performance-api)
+
+## 访客唯一标识
 
 - [samyk/evercookie](https://github.com/samyk/evercookie)
 
@@ -32,13 +41,16 @@
 
 - [取代cookie的网站追踪技术：”帆布指纹识别”初探](http://netsecurity.51cto.com/art/201407/446816.htm)
 
-- [Web性能API——帮你分析Web前端性能](http://www.infoq.com/cn/news/2015/06/web-performance-api)
+### 作用
 
-## 网络广告认证
+- 广告投放中，受众定向、投放频次控制
 
-1. [DoubleVerify](http://doubleverify.com/)
-2. [荷格科技](http://www.adbugtech.com/): 分析见 hegek7
+- 需求方平台中，区别重定向（site retargeting & personalized retargeting & search retargeting）和新客推荐（look－alike）
 
-## 参考资料
-1. http://webadvertising20.com/2011/11/06/really-understanding-iframes/
-2.window.performance API
+- 数据加工与交易中，用户标识、用户行为
+
+#### 用户行为按照对效果广告有效性分类
+
+| 决策行为 | 主动行为 | 半主动行为 | 被动行为 |
+|--------|--------|--------|--------|
+| 转化（conversion）和预转化（pre－conversion） | 广告点击（ad click）、搜索（search）和搜索点击（search click） | 分享（share）和网页浏览（page view） | 广告浏览（ad view） |
