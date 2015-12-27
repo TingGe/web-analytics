@@ -1,5 +1,4 @@
 # Web-Analytics
-监测分析（Measurement & Analytics）、广告验证（Verification）、访客唯一标识
 
 知识图谱标签：在线广告行业、JavaScript（前端/全栈）技术
 
