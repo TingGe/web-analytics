@@ -597,6 +597,10 @@
         }
     };
 
+    /**
+     * 获取浏览器FLASH播放器的版本号。
+     * @return {String} FLASH播放器的版本号。
+     */
     function fc() {
         var a, b, c;
         if ((c = (c = win[_navigator]) ? c.plugins : null) && c[_length])for (var d = 0; d < c[_length] && !b; d++) {
@@ -918,7 +922,7 @@
             ad = !0
         }
     };
-    var SiteIdReg = /^(UA|YT|MO|GP)-(\d+)-(\d+)$/, 
+    var SiteIdReg = /^(UA|YT|MO|GP)-(\d+)-(\d+)$/,
       pc = function (a) {
         function b(a, b) {
             d.b[_data].set(a, b)
