@@ -42,6 +42,10 @@
 
 #### 用户行为按照对效果广告有效性分类
 
-| 决策行为 | 主动行为 | 半主动行为 | 被动行为 |
-|--------|--------|--------|--------|
+| 决策行为                               | 主动行为                                     | 半主动行为                     | 被动行为          |
+| ---------------------------------- | ---------------------------------------- | ------------------------- | ------------- |
 | 转化（conversion）和预转化（pre－conversion） | 广告点击（ad click）、搜索（search）和搜索点击（search click） | 分享（share）和网页浏览（page view） | 广告浏览（ad view） |
+
+## 附录
+
+- [CodingLabs](http://blog.codinglabs.org/articles/how-web-analytics-data-collection-system-work.html)
