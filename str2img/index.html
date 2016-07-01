@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>像素化 ASCII 字符串</title>
+  <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" />
+  <style>
+    textarea {
+      width: 500px;
+      height: 100px
+    }
+  </style>
+  <script src="./lib.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <form id="form" onsubmit="return false;">
+    <p>
+      <textarea name="code" placeholder="目前只支持 ASCII 字符集（1-127），请将字符集之外的字符编为 \\uxxxx 再试" id="code"></textarea>
+    </p>
+    <p>
+      <input type="submit" value="生成图片" id="generate">
+    </p>
+    <div>
+      <p>
+        <img id="pic" />
+      </p>
+      <a id="download" download="code.png" href="#">
+        下载
+      </a>
+    </div>
+
+    <p>
+      解码: 选择一个由编码器生成的图片
+    </p>
+    <p>
+      <textarea name="code" id="code2"></textarea>
+    </p>
+    <p>
+      <input type="file" id="select">
+    </p>
+  </form>
+  <script>
+    document.querySelector('#generate').addEventListener('click', function(e) {
+      e.preventDefault();
+
+      var str = document.querySelector('#code').value;
+
+      if (!str) {
+        alert('请传入要处理的字符串！');
+        return;
+      }
+
+      if (/[^\x01-\x7F]/.test(str)) {
+        alert('目前只支持 ASCII 字符集（1-127），请将字符集之外的字符编为 \\uxxxx 再试！');
+        return;
+      }
+
+      var dataUri = Everycookie.Encode(str);
+
+      document.querySelector('#pic').src = dataUri;
+      document.querySelector('#download').href = dataUri;
+    }, false);
+
+    document.querySelector('#select').addEventListener('change', function(e) {
+      e.preventDefault();
+      var f = this.files[0];
+      var fr = new FileReader();
+
+      fr.onload = function() {
+        var img = new Image;
+        img.onload = function() {
+          document.querySelector('#code2').value = Everycookie.Decode(img);
+        };
+        img.onerror = function() {
+          alert('你选择的不是图片！');
+        };
+        img.src = this.result;
+      };
+
+      fr.readAsDataURL(f);
+    }, false);
+  </script>
+
+  <button id="get-ip">点击获取本机 IP 信息</button>
+  <div id="ip-info"></div>
+  <script>
+    (function() {
+      function getIP(callback) {
+        var img = new Image();
+        img.onload = function() {
+          callback(Everycookie.Decode(this));
+        };
+        img.onerror = function() {
+          alert('接口加载失败。。。');
+        };
+        img.crossOrigin = '*';
+        img.src = 'http://ip.qgy18.com/?png=1&_=' + Math.random();
+      }
+
+      document.getElementById('get-ip').addEventListener('click', function() {
+        var el = document.getElementById('ip-info');
+        el.innerHTML = 'loading...';
+        getIP(function(d) {
+          d = JSON.parse(d);
+          console.log(d);
+          el.innerHTML = 'IP 信息：' + d.ip + '，' + d.address;
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
