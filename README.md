@@ -50,3 +50,4 @@
 ## 附录
 
 - [CodingLabs](http://blog.codinglabs.org/articles/how-web-analytics-data-collection-system-work.html)
+- [聊一聊前端存储那些事儿](http://mp.weixin.qq.com/s?__biz=MzIwNjQwMzUwMQ==&mid=2247484013&idx=1&sn=270295c8a6fe604d22e71d8087297d35)
