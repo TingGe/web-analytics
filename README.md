@@ -7,6 +7,7 @@
 - [Google Analytics之工作原理和应用技巧](http://www.drupal001.com/2012/04/google-analytics-mechanism/)源码分析见 google-analytics
 - [谈谈Google Analytics](http://yansong.me/2013/09/17/talk-about-Google-Analytics.html)
 - [蓝鲸的网站分析笔记](http://bluewhale.cc/?s=Google)
+- [Lamp Blog](http://www.lampblog.net/category/web%E5%88%86%E6%9E%90/google-analytics/)
 - [exelate](http://exelate.com/) 尼尔森，让品牌了解客户参与实时跟踪和数字营销影响到线下的销售
 - [clicky](http://clicky.com/)  针对小网站和博客，包括实时访客追踪、深度内容分析等高级服务
 - [Ptengine](https://www.ptengine.com/)  能够出页面复杂互动元素的热图报告、可实时分析网站数据和用户行为
@@ -34,6 +35,8 @@
 - [fingerprintjs2](https://github.com/Valve/fingerprintjs2)
 - [不用Cookie的“Cookie”技术](http://blog.jobbole.com/46266/)
 - [取代cookie的网站追踪技术：”帆布指纹识别”初探](http://netsecurity.51cto.com/art/201407/446816.htm)
+- [利用图片传输数据的另类思想](https://imququ.com/post/use-image-to-transfer-data.html)
+- [像素化你的代码](https://imququ.com/post/code2png-encoder.html)
 
 ### 作用
 
