@@ -13,6 +13,10 @@
 - [Ptengine](https://www.ptengine.com/)  能够出页面复杂互动元素的热图报告、可实时分析网站数据和用户行为
 - [GrowingIO](https://www.growingio.com/) 基于用户行为的新一代数据分析产品。亮点：通过圈选功能，可视化地建立标签、指标和单图。功能：概览（PV、UA），留存（新访、留存、行为类型），看板，单图，用户分群，管理（标签、指标）
 
+## 异常监测
+
+- [Sentry](https://github.com/getsentry/sentry)
+
 ## 广告验证 Verification
 
 - Integral Ad Science
