@@ -4,6 +4,7 @@
 
 ## 监测分析 Measurement & Analytics
 
+- [GoSquared](https://www.gosquared.com/) 美国的一家提供网站流量监控以及电子商务转化率监控的服务商，算是非常典型的监控平台，为了打造成所有人都愿意使用的产品，他们在设计上面临不小的挑战
 - [Google Analytics之工作原理和应用技巧](http://www.drupal001.com/2012/04/google-analytics-mechanism/)源码分析见 google-analytics
 - [谈谈Google Analytics](http://yansong.me/2013/09/17/talk-about-Google-Analytics.html)
 - [蓝鲸的网站分析笔记](http://bluewhale.cc/?s=Google)
