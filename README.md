@@ -35,6 +35,7 @@
 
 ## 访客唯一标识
 
+- [Store.js](https://github.com/marcuswestin/store.js)
 - [samyk/evercookie](https://github.com/samyk/evercookie)
 - [lucb1e/cookielesscookies](https://github.com/lucb1e/cookielesscookies)
 - [fingerprintjs2](https://github.com/Valve/fingerprintjs2)
