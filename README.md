@@ -43,7 +43,7 @@
 - [Sizmek](http://www.sizmek.com)
 
 ### 参考资料
-- http://webadvertising20.com/2011/11/06/really-understanding-iframes/
+- https://onlineadview.wordpress.com/2011/11/06/really-understanding-iframes/
 - [Web性能API——帮你分析Web前端性能](http://www.infoq.com/cn/news/2015/06/web-performance-api)
 - [Getting maximum from JavaScript error tracking](http://blog.qbaka.com/post/81596992555/getting-maximum-from-javascript-error-tracking)
 
