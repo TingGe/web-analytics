@@ -1,4 +1,8 @@
+[TOC]
+
 # Web-Analytics
+
+> 本文主要是我个人的一些思考，如需转载请标明[本文引用地址](https://github.com/TingGe/web-analytics)和[听歌](http://tingge.github.io/html/me.html)签名。资料采集自互联网，如有侵权，请联系我删除。
 
 知识图谱标签：第三方监测、在线广告行业、JavaScript（前端/全栈）技术
 
@@ -66,8 +70,61 @@
 | ---------------------------------- | ---------------------------------------- | ------------------------- | ------------- |
 | 转化（conversion）和预转化（pre－conversion） | 广告点击（ad click）、搜索（search）和搜索点击（search click） | 分享（share）和网页浏览（page view） | 广告浏览（ad view） |
 
-## 附录
+### 参考资料
 
 - [CodingLabs](http://blog.codinglabs.org/articles/how-web-analytics-data-collection-system-work.html)
 - [聊一聊前端存储那些事儿](http://mp.weixin.qq.com/s?__biz=MzIwNjQwMzUwMQ==&mid=2247484013&idx=1&sn=270295c8a6fe604d22e71d8087297d35)
 - [构建可靠的前端异常监控服务-采集篇](http://mp.weixin.qq.com/s/LGbMXauSuuGWcvqazjXWjQ)
+
+## Web智能分析
+
+> 个人的一些思考：基于 CNN 的 Web 智能分析
+
+### 关键角色
+
+|           | 说明                                       |
+| --------- | ---------------------------------------- |
+| 采集器       | 爬虫主动采集、JS SDK 被动采集                       |
+| 识别、截图服务   | 截图的技术，可参见[《云商业智能(Cloud BI)》的“截屏”部分](http://tingge.github.io/html/cloud-bi.html) |
+| 计算机视觉智能分析 | 主要使用计算机视觉 CNN 技术                         |
+
+### 流程
+
+1. #### 用户系统测试账号录入和授权
+
+   授权内容主要包括：账号、密码、有效期和频率等
+
+2. #### 爬取和机器识别，生成规则
+
+3. #### 根据规则，账号登录和截屏服务
+
+4. #### 机器学习，智能分析，生成报告
+
+   | 报告   | 参考技术                                     |
+   | ---- | ---------------------------------------- |
+   | 色彩趋势 | 可用 [node-vibrant](https://github.com/akfish/node-vibrant) 提取出图片的主要颜色和百分比，分析出图片的主色调 |
+   | 图关键词 | 可调用 [clarifai](https://clarifai.com/developer/) 或同类图像识别 api，标记出内容，自动识别图片的内容，作为图片的关键词 |
+
+### 疑问和结论
+
+1. 合适的图像识别服务？结论：clarifai 同类、[tensorflow/models](tensorflow/models) 等
+2. 如何处理账号问题？有权限截图？结论：暂可采用用户授权方式解决。
+3. 用户为什么用？怎么用？流量问题？结论：思考中
+
+### 参考
+
+- [写给设计师的人工智能指南：图像](https://mp.weixin.qq.com/s?__biz=MzA3MDgyMjMwMA==&mid=2649932923&idx=1&sn=6d2818ab05a3674350360132a3c4fa6e)
+
+## 反馈
+
+[https://github.com/TingGe/web-analytics/issues](https://github.com/TingGe/web-analytics/issues)
+
+## 贡献
+
+https://github.com/TingGe/web-analytics/graphs/contributors
+
+## 许可
+
+(The MIT License)
+
+Copyright (c)  Ting Ge [505253293@163.com
