@@ -128,4 +128,4 @@ https://github.com/TingGe/web-analytics/graphs/contributors
 
 (The MIT License)
 
-Copyright (c)  Ting Ge [505253293@163.com
+Copyright (c)  Ting Ge 505253293@163.com
