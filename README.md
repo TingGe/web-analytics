@@ -49,6 +49,8 @@
 
 ## 访客唯一标识
 
+- [Web客户端追踪（下）—浏览器指纹追踪](https://paper.seebug.org/229/)：比较全面，覆盖了浏览器指纹追踪、跨浏览器指纹和 WebRTC 等
+
 - [Store.js](https://github.com/marcuswestin/store.js)
 - [samyk/evercookie](https://github.com/samyk/evercookie)
 - [lucb1e/cookielesscookies](https://github.com/lucb1e/cookielesscookies)
@@ -100,6 +102,14 @@
 
 4. #### 机器学习，智能分析，生成报告
 
+   关键词：深度卷积神经网络
+
+   图谱步骤： 图片归一化：灰度值 = RGB各值的和 / 3 
+
+   计算梯度：
+
+   舍掉局部信息：
+
    | 报告   | 参考技术                                     |
    | ---- | ---------------------------------------- |
    | 色彩趋势 | 可用 [node-vibrant](https://github.com/akfish/node-vibrant) 提取出图片的主要颜色和百分比，分析出图片的主色调 |
@@ -109,11 +119,12 @@
 
 1. 合适的图像识别服务？结论：clarifai 同类、[tensorflow/models](tensorflow/models) 等
 2. 如何处理账号问题？有权限截图？结论：暂可采用用户授权方式解决。
-3. 用户为什么用？怎么用？流量问题？结论：思考中
+3. 用户为什么用？怎么用？流量问题？结论：取决于不同报告的价值。
 
 ### 参考
 
 - [写给设计师的人工智能指南：图像](https://mp.weixin.qq.com/s?__biz=MzA3MDgyMjMwMA==&mid=2649932923&idx=1&sn=6d2818ab05a3674350360132a3c4fa6e)
+- [Google 图片搜索的原理是什么？](https://www.zhihu.com/question/19726630)
 
 ## 反馈
 
