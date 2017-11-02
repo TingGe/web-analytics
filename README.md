@@ -19,6 +19,8 @@
 - [GrowingIO](https://www.growingio.com/) 基于用户行为的新一代数据分析产品。亮点：通过圈选功能，可视化地建立标签、指标和单图。功能：概览（PV、UA），留存（新访、留存、行为类型），看板，单图，用户分群，管理（标签、指标）
 - [RisingStack](https://trace.risingstack.com) Node.js和microservices监控解决方案，错误检测,调试,业绩监测和跟踪的分布的服务
 - [segmentio/analytics.js](segmentio/analytics.js) 将 analytics.js 无障碍地集成到任何Web应用程序的方法。
+- [heatmap](https://heatmap.me/) 实时站点热图
+- [Open Web Analytics](https://github.com/padams/Open-Web-Analytics) 简单开源的 Web 分析工具
 
 ## 前端日志记录
 
