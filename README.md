@@ -1,5 +1,3 @@
-[TOC]
-
 # Web-Analytics
 
 > 本文主要是我个人的一些思考，如需转载请标明[本文引用地址](https://github.com/TingGe/web-analytics)和[听歌](http://tingge.github.io/html/me.html)签名。资料采集自互联网，如有侵权，请联系我删除。
@@ -81,7 +79,7 @@
 - [聊一聊前端存储那些事儿](http://mp.weixin.qq.com/s?__biz=MzIwNjQwMzUwMQ==&mid=2247484013&idx=1&sn=270295c8a6fe604d22e71d8087297d35)
 - [构建可靠的前端异常监控服务-采集篇](http://mp.weixin.qq.com/s/LGbMXauSuuGWcvqazjXWjQ)
 
-## Web智能分析
+## Web 智能分析
 
 > 个人的一些思考：基于 CNN 的 Web 智能分析
 
@@ -100,6 +98,10 @@
    授权内容主要包括：账号、密码、有效期和频率等
 
 2. #### 爬取和机器识别，生成规则
+
+    | 类库                                       | 说明                        |
+    | ---------------------------------------- | ------------------------- |
+    | [Fathom](https://github.com/mozilla/fathom) | 提取网页中有意义内容的 JavaScript 框架 |
 
 3. #### 根据规则，账号登录和截屏服务
 
@@ -142,3 +144,4 @@ https://github.com/TingGe/web-analytics/graphs/contributors
 (The MIT License)
 
 Copyright (c)  Ting Ge 505253293@163.com
+
