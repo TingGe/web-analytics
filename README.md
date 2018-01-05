@@ -32,6 +32,9 @@
 - [FunDebug](https://fundebug.com/)
 - [Rollbar](https://github.com/rollbar/rollbar.js)
 
+### 参考资料
+- [从无到有<前端异常监控系统>落地](http://www.cnblogs.com/1wen/p/7942608.html)
+
 ## 广告验证 Verification
 
 - Integral Ad Science
