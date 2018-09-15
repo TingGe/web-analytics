@@ -33,6 +33,8 @@
 - [Rollbar](https://github.com/rollbar/rollbar.js)
 
 ### 参考资料
+- [前端异常监控解决方案研究](http://cdc.tencent.com/2018/09/13/frontend-exception-monitor-research/)
+
 - [从无到有<前端异常监控系统>落地](http://www.cnblogs.com/1wen/p/7942608.html)
 
 ## 广告验证 Verification
